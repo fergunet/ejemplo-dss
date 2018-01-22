@@ -66,26 +66,7 @@ export class Mediator { //Permite trabajar con los estados
         var previousState = this._currentState;
         var nextState = this.getStateImpl(stateType);
 
-        if (previousState.getPanelType() == ... && nextState.getPanelType() == ...)
-            this._mediatorImpl.HACER_ALGO()
-        ...
-        if (....)
-
-
-
-        if (nextState.isSideNavVisible())
-            this._mediatorImpl.showNavPanel();
-        else
-            this._mediatorImpl.hideNavPanel();
-
-        this._mediatorImpl.changeShowHideSideButton( 
-            previousState.getPanelButtonClass(),
-            nextState.getPanelButtonClass() );
-
-        this._currentState = nextState;
-        if (this._currentState.getPanelType() == PanelType.Primary ) {
-                this._currentMainPanelState = this._currentState;
-        }
+        //LOGICA PARA MOVERSE ENTRE ESTADOS
     }
 
     //Abrir y cerrar el sideNav
