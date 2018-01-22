@@ -23,7 +23,7 @@ export class AppComponent
 
     mediator: Mediator = new Mediator(this);
     ngAfterViewInit() {
-        this.mediator.moveToState(StateType.MainPanelOnly);
+        this.mediator.moveToState(StateType.ESTADO_INICIAL);
     }
 
     // IMediatorImpl functions
